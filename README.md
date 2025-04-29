@@ -89,6 +89,56 @@ Data optimization ensures the efficient retrieval and storage of data within the
 - **Test Automation Engineer:** Builds test scripts and automation frameworks to streamline the testing process and provide rapid feedback on application stability.
 - **DevOps Engineer:** Bridges development and operations, builds CI/CD pipelines, and ensures efficient, stable, and automated deployment workflows.
 
+
+## 🔐 **API Security**
+
+Security is a critical aspect of any web application, especially when dealing with sensitive user data, payments, and personal information. In this project, several security measures will be implemented to ensure the integrity and confidentiality of the data and transactions.
+
+### 1. **Authentication**
+Authentication ensures that only legitimate users can access the platform. We will implement **JSON Web Tokens (JWT)** for secure user authentication. Users will be required to log in with their credentials, and their session will be managed using JWT, which is a secure and scalable method for handling user authentication.
+
+**Why it’s crucial:**  
+Authentication is essential to protect user accounts and prevent unauthorized access to private information. Ensuring that only authenticated users can interact with the platform builds trust and security.
+
+### 2. **Authorization**
+Once authenticated, authorization ensures that users have the appropriate permissions to perform certain actions (e.g., a user can only edit their own properties). We will implement role-based access control (RBAC) to restrict access to specific resources based on the user's role (e.g., admin, regular user, property owner).
+
+**Why it’s crucial:**  
+Authorization helps protect sensitive data by restricting actions based on user roles. For example, users should not be able to access or modify data that they are not permitted to interact with, such as another user's bookings or payment details.
+
+### 3. **Rate Limiting**
+To protect the platform from abuse and ensure fair use of resources, we will implement **rate limiting** for the APIs. Rate limiting will restrict the number of requests a user can make within a specified time period (e.g., 100 requests per hour). This helps prevent spam attacks and ensures that the system remains responsive for all users.
+
+**Why it’s crucial:**  
+Rate limiting is important to defend against Denial-of-Service (DoS) and brute-force attacks, which could overwhelm the system and degrade performance. It also prevents abusive behavior, such as repeatedly attempting to access sensitive data or making too many requests in a short time.
+
+### 4. **Data Encryption**
+All sensitive user data, including passwords and payment details, will be encrypted both in transit and at rest. We will use **SSL/TLS** to secure communications between the client and server and encrypt passwords using modern hashing algorithms like **bcrypt**.
+
+**Why it’s crucial:**  
+Encryption ensures that even if data is intercepted, it cannot be read or used by attackers. It is critical for protecting sensitive information such as passwords, payment data, and personal details from unauthorized access.
+
+### 5. **Input Validation & Sanitization**
+To prevent security vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF), all user inputs will be validated and sanitized. This includes validating the format of user input, ensuring that no malicious scripts or commands are executed.
+
+**Why it’s crucial:**  
+Input validation and sanitization help prevent malicious code from being executed on the server or client-side. This protects the application from common attacks and ensures the integrity of user data and the system.
+
+### 6. **Secure Payment Handling**
+All payment transactions will be processed using a secure, third-party payment gateway (e.g., Stripe, PayPal). The payment data will not be stored on the platform, reducing the risk of data breaches. Additionally, payments will be encrypted to ensure their security during transmission.
+
+**Why it’s crucial:**  
+Securing payment information is essential to protect users’ financial data and to maintain trust in the platform. Payment information is a high-value target for attackers, and proper security measures are critical to prevent fraud and unauthorized access to financial data.
+
+### 7. **Logging & Monitoring**
+Continuous logging and monitoring will be implemented to track all API requests, user actions, and potential security threats. This data will help detect suspicious activity and provide insight into any potential vulnerabilities in the system.
+
+**Why it’s crucial:**  
+Logging and monitoring enable proactive detection of security breaches or system anomalies. In case of an attack or data breach, these logs provide critical information for investigating and resolving the issue.
+
+By implementing these key security measures, we ensure that the platform remains safe, stable, and reliable for all users.
+
+
 ## 📚 Documentation
 
 - REST APIs follow the **OpenAPI standard** for clear and consistent documentation.
