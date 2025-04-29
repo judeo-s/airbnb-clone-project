@@ -13,17 +13,17 @@ The Airbnb Clone Project is a real-world, full-stack web application designed to
 - **Review System:** Allow users to post and manage property reviews.
 - **Performance Optimization:** Use indexing and caching for improved data access.
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
+- **Django:** A high-level Python web framework for building RESTful APIs and backend logic.
+- **Django REST Framework (DRF):** Extends Django to simplify the creation and management of RESTful APIs.
+- **PostgreSQL:** A powerful relational database used to store and manage structured data.
+- **GraphQL:** A flexible query language for efficiently retrieving and modifying backend data.
+- **Celery:** Handles asynchronous tasks such as notifications and payment processing.
+- **Redis:** Provides caching and task queuing support for performance improvements.
+- **Docker:** Offers consistent environments for development and production using containers.
+- **GitHub Actions:** Automates testing, building, and deployment via CI/CD pipelines.
 
-- **Backend Framework:** Django, Django REST Framework
-- **Database:** PostgreSQL
-- **API Technologies:** REST (OpenAPI), GraphQL
-- **Task Queue:** Celery
-- **Caching:** Redis
-- **Containerization:** Docker
-- **DevOps:** GitHub Actions, CI/CD Pipelines
-
-## 👥 Project Team Roles
+## 👥 Team Roles
 
 - **Software Architect:** Designs the system architecture, selects the tech stack, and ensures code quality through standards and reviews.
 - **Software Developer:** Implements the application features. Frontend developers handle the user interface, while backend developers manage logic, algorithms, and data flow. Full-stack developers do both.
